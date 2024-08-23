@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    height: 100%;
+    width: 100%;
+    font-family: "Bebas Neue", sans-serif;
+}
+
+
+
+#main {
+    position: relative;
+    overflow: hidden;
+}
+
+#page {
+    height: 100vh;
+    width: 100vw;
+    position: relative;
+    background-color: #f1f1f1f1;
+}
+
+#page1 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1f1;
+}
+
+#page2 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1f1;
+}
+
+#page3 {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+    background-color: #f1f1f1f1;
+}
+
+
+canvas {
+    position: relative;
+    z-index: 9;
+    max-width: 100vw;
+    max-height: 100vh;
+}
+
+#loop {
+    display: flex;
+    position: absolute;
+    top: 30%;
+    height: 25%;
+    width: 100%;
+    font-size: 80px;
+    white-space: nowrap;
+
+}
+
+@keyframes anim {
+    0% {
+        transform: translateX(0%);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+#loop>h1 {
+    font-weight: 400;
+    animation-name: anim;
+    animation-duration: 30s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+#loop>h1>span {
+    -webkit-text-stroke: 1.2px #000;
+    color: transparent
+}
+
+
+#nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 9%;
+    width: 100%;
+    z-index: 99;
+    position: fixed;
+    padding: 0px 30px;
+}
+
+#nav>h3 {
+    font-weight: 400;
+    font-size: 22px;
+}
+
+#nav>#nav-right>a{
+    color: #000000;
+    cursor: pointer;
+    font-size: 25px;
+    }
+    #nav>#nav-right>a>i{
+    padding-left: 20px;
+        }
+
+
+#page>h3 {
+    position: absolute;
+    top: 62%;
+    left: 5%;
+    font-weight: 400;
+    color: #6d6c6c;
+}
+
+#page>h4 {
+    position: absolute;
+    top: 76%;
+    left: 12%;
+    font-weight: 500;
+    color: #101010;
+}
+
+
+#page1>#right-text {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+}
+
+#page1>#right-text>h3 {
+    font-weight: 400;
+    color: #6d6c6c;
+
+}
+
+#page1>#right-text>h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+
+#page1>#left-text {
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    text-align: end;
+}
+
+#page1>#left-text>h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+#page1>#left-text>h3 {
+    font-weight: 400;
+    color: #6d6c6c;
+}
+#page2>#text-1 {
+
+    position:absolute;
+    top: 35%;
+    left: 6%;
+}
+#page2>#text-1>h3 {
+    font-weight: 400;
+    color: #6d6c6c;
+}
+#page2>#text-1>h1 {
+    font-weight: 700;
+    font-size: 40px;
+}
+
+#page2>#text-2 {
+
+    position:absolute;
+    top: 50%;
+    right: 2%;
+    
+}
+#page2>#text-2>h3 {
+    font-weight: 500;
+    color: #595656;
+    padding-bottom: 11px;
+}
+#page2>#text-2>p {
+    font-weight: 500;
+    color: #222121;
+
+    font-size: 14px;
+}
+#page3>#text1 {
+
+    position:absolute;
+    top: 50%;
+    left: 2%;
+    
+}
+#page3>#text1>h3 {
+    font-weight: 400;
+    color: #6d6c6c;
+    padding-bottom: 11px;
+}
+
+#page3>#text1>h1 {
+    font-weight: 700;
+    color: #111111;
+    padding-bottom: 40px;
+}
+
+#page3>#text2{
+position: absolute;
+    top: 50%;
+    right: 2%;
+    z-index: 99;
+    
+}
+#page3>#text2>h3 {
+    font-weight: 400;
+    color: #6d6c6c;
+    padding-bottom: 11px;
+}
+#page3>#text2>h1 {
+    font-weight: 600;
+    color: #000;
+    font-size: 19px;
+    padding-bottom: 11px;
+}
+#page3>#text2>h1>a {
+  text-decoration: none;
+  color: #000;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+
+}
